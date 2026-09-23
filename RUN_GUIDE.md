@@ -1,77 +1,195 @@
-# ARXML Security Regression Detector - Execution & Testing Guide
+# AUTOSAR SecDiff – Run Guide
 
-This guide provides step-by-step instructions for running, testing, and visualizing the project on your system.
+Complete setup instructions for anyone who has just cloned/pulled this repository
+on a **fresh machine** and wants to run the full evaluation.
 
 ---
 
-## 🚀 1. Master Evaluation & Figure Generation (Recommended)
+## ✅ Prerequisites (install once)
 
-Run the full automated suite to execute all unit tests, evaluate 11 real-world CVE scenarios, benchmark 285 mutation test cases, and generate all publication-ready IEEE figures and reports.
+| Requirement | Minimum version | Check command |
+|-------------|-----------------|---------------|
+| Python | **3.10 or higher** | `python --version` |
+| pip | bundled with Python | `pip --version` |
+| Git | any recent version | `git --version` |
 
-```powershell
+> **Windows users:** make sure Python is on your PATH (tick "Add Python to PATH"
+> during installation, or add it manually).
+
+---
+
+## 1 – Clone / Pull the Repository
+
+```bash
+# Clone for the first time
+git clone <your-repo-url>
+
+# --- OR, if you already cloned it, just pull latest changes ---
+git pull
+```
+
+Then enter the project folder:
+
+```bash
+cd hello_world-main
+```
+
+---
+
+## 2 – Create a Virtual Environment
+
+A virtual environment keeps project dependencies isolated from your system Python.
+
+```bash
+# Create the venv (only once per machine)
+python -m venv venv
+```
+
+Activate it:
+
+```bash
+# Windows (PowerShell / CMD)
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+```
+
+You should now see `(venv)` at the start of your terminal prompt.
+
+---
+
+## 3 – Install Dependencies
+
+```bash
+# Install all required packages
+pip install -r requirements.txt
+
+# Install the arxml_secdiff package itself in editable/dev mode
+pip install -e .
+```
+
+This installs:
+- `lxml` – XML/ARXML parsing
+- `networkx` – graph-based ECU reachability analysis
+- `PyYAML` – roles/config parsing
+- `matplotlib` + `seaborn` – figure generation
+- `pytest` – unit testing
+
+Verify the install succeeded:
+
+```bash
+pip list | grep -E "lxml|networkx|PyYAML|matplotlib|seaborn|pytest"
+```
+
+---
+
+## 4 – (Optional) Verify the Setup Before Full Evaluation
+
+Run the unit tests alone to confirm everything is installed correctly:
+
+```bash
+python -m pytest tests/ -v
+```
+
+Expected output: all tests **PASSED** (401 cases).
+
+---
+
+## 5 – Run the Full Evaluation
+
+```bash
 python run_full_evaluation.py
 ```
 
-### Generated Outputs:
-- **`docs/results.md`**: Complete markdown report with Precision, Recall, F1, and FPR metrics.
-- **`docs/results.json`**: Raw numerical experimental dataset.
-- **`out/figures/`**: IEEE-formatted vector figures (`fig1_confusion_matrices`, `fig2_detection_by_category`, `fig3_composition_order`, `fig4_scenario_matrix`) in `.pdf`, `.svg`, and `.png`.
-- **`scenario_runs/RESULTS.md`**: Summary grid for the 11 real-world CVE scenarios.
+This single command runs **4 stages** automatically:
+
+| Stage | What it does | Output location |
+|-------|--------------|-----------------|
+| **1. Unit Tests** | Runs 401 pytest cases | terminal |
+| **2. CVE Scenarios** | Replicates + mutates ARXML for 11 real-world CVE scenarios | `scenario_runs/` |
+| **3. Evaluation Corpus** | Runs ~300 auto-generated mutation cases | `docs/results.md`, `docs/results.json` |
+| **4. IEEE Figures** | Generates publication-quality charts | `out/figures/` |
+
+Total runtime: approximately **1–3 minutes** on a modern laptop.
 
 ---
 
-## 🖥️ 2. Desktop GUI Application
+## 6 – View the Results
 
-Launch the interactive desktop interface to browse for "Before" and "Updated" ARXML files, configure roles, and inspect side-by-side graph topology visualizations in your web browser.
+| Result | Location |
+|--------|----------|
+| CVE scenario verdicts | `scenario_runs/RESULTS.md` |
+| Full evaluation report (Markdown) | `docs/results.md` |
+| Full evaluation metrics (JSON) | `docs/results.json` |
+| IEEE figures (PNG/PDF) | `out/figures/` |
 
-```powershell
+---
+
+## Other Useful Commands
+
+### Run only the 11 CVE scenarios
+```bash
+python run_scenarios.py
+```
+
+### Run only unit tests
+```bash
+python -m pytest tests/ -v
+```
+
+### Use the CLI tool directly
+```bash
+# Compare two ARXML snapshots
+arxml-secdiff before.arxml after.arxml
+
+# With a roles config file
+arxml-secdiff before.arxml after.arxml --roles data/roles.yaml
+```
+
+### Launch the GUI
+```bash
 python gui.py
 ```
 
 ---
 
-## 🛡️ 3. Real-World CVE Scenarios Suite
+## Troubleshooting
 
-Run the 11 documented vehicle security exploit scenarios (Jeep Cherokee, BMW ConnectedDrive, Tesla 2016 OTA, Mitsubishi Outlander, FCA Recall, Nissan API, Spireon Fleet, SOME/IP, Supply Chain SDK, 2024 Kia Telematics, 2023 Toyota CAN Injection).
+| Problem | Fix |
+|---------|-----|
+| `python` not found | Try `python3` instead; or re-install Python with "Add to PATH" ticked |
+| `ModuleNotFoundError: lxml` | Virtual env not activated, or `pip install -r requirements.txt` not run |
+| `ModuleNotFoundError: arxml_secdiff` | Run `pip install -e .` from the project root |
+| `pytest: command not found` | Use `python -m pytest tests/` instead |
+| Permission error on `venv\Scripts\activate` (Windows) | Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` in PowerShell |
+
+---
+
+## Quick Copy-Paste Block (Windows PowerShell)
 
 ```powershell
-python run_scenarios.py
+git clone <your-repo-url>
+cd hello_world-main
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+pip install -e .
+python run_full_evaluation.py
+```
+
+## Quick Copy-Paste Block (macOS / Linux)
+
+```bash
+git clone <your-repo-url>
+cd hello_world-main
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install -e .
+python run_full_evaluation.py
 ```
 
 ---
 
-## 🧪 4. Automated Unit Test Suite
-
-Run the full `pytest` test suite containing 401 automated unit tests verifying parsers, graph building, SecOC resolution, reachability analysis, and gate logic.
-
-```powershell
-pytest tests/
-```
-
----
-
-## 💻 5. Manual CLI Analysis
-
-Perform a security diff directly between two ARXML snapshots using the CLI:
-
-```powershell
-python -m arxml_secdiff --before tests/fixtures/scenario_b_v1.arxml --updated tests/fixtures/scenario_b_v2.arxml --roles tests/fixtures/scenario_b_roles.yaml --verbose
-```
-
-### CLI Flags Reference:
-- `--before <file.arxml>`: Path to the baseline snapshot.
-- `--updated <file.arxml>`: Path to the release candidate snapshot.
-- `--roles <file.yaml>`: HARA/TARA seed roles (Entry Points & Critical Nodes).
-- `--export-graphs`: Export attack topology diagrams to `.dot`, `.json`, and `.png`.
-- `--format json`: Export machine-readable JSON report for CI/CD gates.
-
----
-
-## 📁 Artifact Locations
-
-| Artifact | Location |
-|---|---|
-| **Markdown Evaluation Report** | `docs/results.md` |
-| **CVE Scenarios Results** | `scenario_runs/RESULTS.md` |
-| **IEEE Publication Figures** | `out/figures/` |
-| **Scenario Artifacts** | `scenario_runs/` |
+*Generated for AUTOSAR SecDiff – ARXML Security Regression Analysis Tool.*
