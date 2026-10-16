@@ -350,8 +350,18 @@ def build_after_by_replication(before_arxml: str, scn: Scenario) -> str:
                 flen = etree.SubElement(secoc_el, f"{{{NS}}}FRESHNESS-VALUE-LENGTH")
                 flen.text = "8"
                 pref = etree.SubElement(secoc_el, f"{{{NS}}}PAYLOAD-REF", DEST="I-SIGNAL-I-PDU")
-                pref.text = f"/{pkg}/Comm/{name}IPdu"
                 comm_pkg.append(secoc_el)  # DOM node insertion
+
+    # 2b. Handle SecOC cryptographic parameter downgrade (Scenario 12)
+    if scn.id == "12_secoc_weak_mac" and comm_pkg is not None:
+        for child in list(comm_pkg):
+            if child.tag.rsplit("}", 1)[-1] == "SECURED-I-PDU":
+                for sub in child:
+                    tag = sub.tag.rsplit("}", 1)[-1]
+                    if tag == "AUTH-INFO-TX-LENGTH":
+                        sub.text = "8"   # Truncated 8-bit MAC
+                    elif tag == "FRESHNESS-VALUE-LENGTH":
+                        sub.text = "0"   # Zero freshness value (replayable)
 
     # 3. Handle New Edges added in 'after' (DOM mutation across interfaces, ports, connectors, signals)
     new_edges = [e for e in scn.after_edges if e.name not in before_edge_names]

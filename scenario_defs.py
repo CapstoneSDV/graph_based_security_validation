@@ -348,3 +348,58 @@ SCENARIOS.append(Scenario(
     entry=["headlight"], critical=["immob"],
 ))
 
+
+# 12 -- SecOC Cryptographic Parameter Downgrade (Known Gap Boundary) ---------
+_n12 = [
+    Node("telemetry", "TelemetryUnit", "TelematicsEcu"),
+    Node("gw", "CentralGateway", "GatewayEcu"),
+    Node("brakes", "BrakeController", "ChassisEcu"),
+]
+_before_edges12 = [
+    Edge("telemetry", "gw", "telemToGw", "TelemStream", secured=True),
+    Edge("gw", "brakes", "gwToBrakes", "DecelSecuredCmd", secured=True),
+]
+_after_edges12 = [
+    Edge("telemetry", "gw", "telemToGw", "TelemStream", secured=True),
+    Edge("gw", "brakes", "gwToBrakes", "DecelSecuredCmd", secured=True),
+]
+SCENARIOS.append(Scenario(
+    id="12_secoc_weak_mac",
+    title="SecOC Cryptographic Parameter Downgrade (FM-1 Known Gap)",
+    source="AUTOSAR SecOC Specification; evaluation of boolean authentication boundary",
+    summary="Update preserves SECURED-I-PDU wrapper but truncates MAC to 8 bits and clears freshness. "
+             "Expected: PASS (demonstrates the documented boolean-SecOC limitation).",
+    expected_before="PASS", expected_after="PASS",
+    before_nodes=_n12, before_edges=_before_edges12,
+    after_nodes=_n12, after_edges=_after_edges12,
+    entry=["telemetry"], critical=["brakes"],
+))
+
+
+# 13 -- Unannotated Component Naming Boundary (Heuristic Boundary) ------------
+_n13 = [
+    Node("telemetry", "TelemetryUnit", "TelematicsEcu"),
+    Node("gw", "CentralGateway", "GatewayEcu"),
+    Node("motion", "LongitudinalMotionController", "ChassisEcu"),
+]
+_before_edges13 = [
+    Edge("telemetry", "gw", "telemToGw", "TelemStream", secured=True),
+    Edge("gw", "motion", "gwToMotion", "MotionCmd", secured=True),
+]
+_after_edges13 = [
+    Edge("telemetry", "gw", "telemToGw", "TelemStream", secured=False),
+    Edge("gw", "motion", "gwToMotion", "MotionCmd", secured=False),
+]
+SCENARIOS.append(Scenario(
+    id="13_unannotated_naming_boundary",
+    title="Non-Standard Component Naming (FM-4 Heuristic Boundary)",
+    source="ISO/SAE 21434 Heuristic Inference Boundary Analysis",
+    summary="Unannotated motion controller without standard 'brake'/'steer' substring tests fallback heuristics. "
+             "Expected: BLOCK (with explicit roles.yaml) vs Inconclusive (unseeded).",
+    expected_before="PASS", expected_after="BLOCK",
+    before_nodes=_n13, before_edges=_before_edges13,
+    after_nodes=_n13, after_edges=_after_edges13,
+    entry=["telemetry"], critical=["motion"],
+))
+
+

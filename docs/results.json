@@ -3,7 +3,7 @@
     "python": "3.12.6",
     "platform": "Windows-11-10.0.26200-SP0",
     "befores": [
-      "D:\\hello_world-main\\hello_world-main\\tests\\fixtures\\scenario_b_v1.arxml"
+      "D:\\demo\\demo\\tests\\fixtures\\scenario_b_v1.arxml"
     ],
     "timing": "per-case pipeline.run only; excludes corpus generation, process startup and imports"
   },
@@ -35,11 +35,11 @@
         "false_negative_rate_denominator": 150
       },
       "time_to_detect_ms": {
-        "mean": 7.439,
-        "median": 6.907,
-        "p95": 10.36,
-        "max": 47.179,
-        "sum": 2120.09
+        "mean": 16.431,
+        "median": 15.042,
+        "p95": 26.48,
+        "max": 51.91,
+        "sum": 4682.89
       }
     },
     "comparisons": [
@@ -59,8 +59,8 @@
         "f1": 0.7653061224489797,
         "false_positive_rate": 0.989247311827957,
         "false_positive_rate_denominator": 93,
-        "median_ms": 10.464,
-        "total_seconds": 3.128
+        "median_ms": 25.225,
+        "total_seconds": 7.705
       },
       {
         "detector": "element-diff",
@@ -78,8 +78,8 @@
         "f1": 0.77720207253886,
         "false_positive_rate": 0.9247311827956989,
         "false_positive_rate_denominator": 93,
-        "median_ms": 7.115,
-        "total_seconds": 2.211
+        "median_ms": 15.542,
+        "total_seconds": 4.862
       },
       {
         "detector": "structural-grep",
@@ -97,8 +97,8 @@
         "f1": 0.7382920110192837,
         "false_positive_rate": 0.8494623655913979,
         "false_positive_rate_denominator": 93,
-        "median_ms": 3.207,
-        "total_seconds": 0.982
+        "median_ms": 7.072,
+        "total_seconds": 2.235
       },
       {
         "detector": "arxml-secdiff",
@@ -116,8 +116,8 @@
         "f1": 0.7903225806451613,
         "false_positive_rate": 0.0,
         "false_positive_rate_denominator": 93,
-        "median_ms": 6.907,
-        "total_seconds": 2.12
+        "median_ms": 15.042,
+        "total_seconds": 4.683
       }
     ],
     "by_family": [
@@ -422,7 +422,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 8.224,
+        "elapsed_ms": 16.765,
         "gap": "",
         "error": ""
       },
@@ -454,7 +454,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.922,
+        "elapsed_ms": 11.372,
         "gap": "",
         "error": ""
       },
@@ -486,7 +486,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 6.907,
+        "elapsed_ms": 51.91,
         "gap": "",
         "error": ""
       },
@@ -518,7 +518,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.526,
+        "elapsed_ms": 10.546,
         "gap": "",
         "error": ""
       },
@@ -550,7 +550,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 6.316,
+        "elapsed_ms": 20.641,
         "gap": "",
         "error": ""
       },
@@ -582,7 +582,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 9.317,
+        "elapsed_ms": 16.55,
         "gap": "",
         "error": ""
       },
@@ -614,7 +614,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 8.624,
+        "elapsed_ms": 15.937,
         "gap": "",
         "error": ""
       },
@@ -646,7 +646,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.699,
+        "elapsed_ms": 15.123,
         "gap": "",
         "error": ""
       },
@@ -678,7 +678,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.406,
+        "elapsed_ms": 23.438,
         "gap": "",
         "error": ""
       },
@@ -701,7 +701,7 @@
           "component-removed:/B/Swc/ScenarioB/trajGuard"
         ],
         "worst_risk": 1,
-        "elapsed_ms": 9.768,
+        "elapsed_ms": 14.101,
         "gap": "",
         "error": ""
       },
@@ -732,7 +732,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.912,
+        "elapsed_ms": 15.403,
         "gap": "",
         "error": ""
       },
@@ -764,7 +764,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.547,
+        "elapsed_ms": 16.297,
         "gap": "",
         "error": ""
       },
@@ -796,7 +796,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 6.698,
+        "elapsed_ms": 15.472,
         "gap": "",
         "error": ""
       },
@@ -828,7 +828,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 8.741,
+        "elapsed_ms": 16.009,
         "gap": "",
         "error": ""
       },
@@ -860,7 +860,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 9.052,
+        "elapsed_ms": 15.632,
         "gap": "",
         "error": ""
       },
@@ -892,7 +892,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 7.924,
+        "elapsed_ms": 16.937,
         "gap": "",
         "error": ""
       },
@@ -924,7 +924,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 12.796,
+        "elapsed_ms": 15.73,
         "gap": "",
         "error": ""
       },
@@ -956,7 +956,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 8.827,
+        "elapsed_ms": 16.45,
         "gap": "",
         "error": ""
       },
@@ -988,7 +988,7 @@
           "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
         ],
         "worst_risk": 5,
-        "elapsed_ms": 8.563,
+        "elapsed_ms": 14.514,
         "gap": "",
         "error": ""
       }
@@ -1074,7 +1074,7 @@
   },
   "befores": [
     {
-      "before": "D:\\hello_world-main\\hello_world-main\\tests\\fixtures\\scenario_b_v1.arxml",
+      "before": "D:\\demo\\demo\\tests\\fixtures\\scenario_b_v1.arxml",
       "corpus": {
         "size": 285,
         "counts": {
@@ -1084,7 +1084,7 @@
         },
         "seed": 42,
         "target": 300,
-        "generation_seconds": 1.362,
+        "generation_seconds": 2.146,
         "skipped": [
           {
             "mutation": "expose-on-bus",
@@ -1176,11 +1176,11 @@
           "false_negative_rate_denominator": 150
         },
         "time_to_detect_ms": {
-          "mean": 7.439,
-          "median": 6.907,
-          "p95": 10.36,
-          "max": 47.179,
-          "sum": 2120.09
+          "mean": 16.431,
+          "median": 15.042,
+          "p95": 26.48,
+          "max": 51.91,
+          "sum": 4682.89
         }
       },
       "comparisons": [
@@ -1200,8 +1200,8 @@
           "f1": 0.7653061224489797,
           "false_positive_rate": 0.989247311827957,
           "false_positive_rate_denominator": 93,
-          "median_ms": 10.464,
-          "total_seconds": 3.128
+          "median_ms": 25.225,
+          "total_seconds": 7.705
         },
         {
           "detector": "element-diff",
@@ -1219,8 +1219,8 @@
           "f1": 0.77720207253886,
           "false_positive_rate": 0.9247311827956989,
           "false_positive_rate_denominator": 93,
-          "median_ms": 7.115,
-          "total_seconds": 2.211
+          "median_ms": 15.542,
+          "total_seconds": 4.862
         },
         {
           "detector": "structural-grep",
@@ -1238,8 +1238,8 @@
           "f1": 0.7382920110192837,
           "false_positive_rate": 0.8494623655913979,
           "false_positive_rate_denominator": 93,
-          "median_ms": 3.207,
-          "total_seconds": 0.982
+          "median_ms": 7.072,
+          "total_seconds": 2.235
         },
         {
           "detector": "arxml-secdiff",
@@ -1257,8 +1257,8 @@
           "f1": 0.7903225806451613,
           "false_positive_rate": 0.0,
           "false_positive_rate_denominator": 93,
-          "median_ms": 6.907,
-          "total_seconds": 2.12
+          "median_ms": 15.042,
+          "total_seconds": 4.683
         }
       ],
       "by_family": [
@@ -1553,7 +1553,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 9.046,
+          "elapsed_ms": 17.434,
           "gap": "",
           "error": ""
         },
@@ -1574,7 +1574,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.868,
+          "elapsed_ms": 14.788,
           "gap": "",
           "error": ""
         },
@@ -1596,7 +1596,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.638,
+          "elapsed_ms": 14.055,
           "gap": "",
           "error": ""
         },
@@ -1627,7 +1627,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.224,
+          "elapsed_ms": 16.765,
           "gap": "",
           "error": ""
         },
@@ -1648,7 +1648,7 @@
             "rehosted-component:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.912,
+          "elapsed_ms": 41.067,
           "gap": "",
           "error": ""
         },
@@ -1669,7 +1669,7 @@
             "rehosted-component:/B/Swc/ScenarioB/ivi"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.749,
+          "elapsed_ms": 22.366,
           "gap": "",
           "error": ""
         },
@@ -1690,7 +1690,7 @@
             "rehosted-component:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.438,
+          "elapsed_ms": 20.89,
           "gap": "",
           "error": ""
         },
@@ -1711,7 +1711,7 @@
             "rehosted-component:/B/Swc/ScenarioB/ivi"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.707,
+          "elapsed_ms": 15.878,
           "gap": "",
           "error": ""
         },
@@ -1732,7 +1732,7 @@
             "rehosted-component:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.131,
+          "elapsed_ms": 26.703,
           "gap": "",
           "error": ""
         },
@@ -1753,7 +1753,7 @@
             "rehosted-component:/B/Swc/ScenarioB/ivi"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.691,
+          "elapsed_ms": 22.236,
           "gap": "",
           "error": ""
         },
@@ -1774,7 +1774,7 @@
             "rehosted-component:/B/Swc/ScenarioB/gw"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.39,
+          "elapsed_ms": 19.7,
           "gap": "",
           "error": ""
         },
@@ -1795,7 +1795,7 @@
             "rehosted-component:/B/Swc/ScenarioB/diagRouter"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.762,
+          "elapsed_ms": 16.031,
           "gap": "",
           "error": ""
         },
@@ -1816,7 +1816,7 @@
             "rehosted-component:/B/Swc/ScenarioB/gw"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.508,
+          "elapsed_ms": 16.09,
           "gap": "",
           "error": ""
         },
@@ -1837,7 +1837,7 @@
             "rehosted-component:/B/Swc/ScenarioB/diagRouter"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.023,
+          "elapsed_ms": 13.989,
           "gap": "",
           "error": ""
         },
@@ -1858,7 +1858,7 @@
             "rehosted-component:/B/Swc/ScenarioB/gw"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.227,
+          "elapsed_ms": 11.972,
           "gap": "",
           "error": ""
         },
@@ -1879,7 +1879,7 @@
             "rehosted-component:/B/Swc/ScenarioB/diagRouter"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.494,
+          "elapsed_ms": 16.018,
           "gap": "",
           "error": ""
         },
@@ -1900,7 +1900,7 @@
             "rehosted-component:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.25,
+          "elapsed_ms": 16.999,
           "gap": "",
           "error": ""
         },
@@ -1921,7 +1921,7 @@
             "rehosted-component:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.124,
+          "elapsed_ms": 15.746,
           "gap": "",
           "error": ""
         },
@@ -1942,7 +1942,7 @@
             "rehosted-component:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.129,
+          "elapsed_ms": 15.327,
           "gap": "",
           "error": ""
         },
@@ -1963,7 +1963,7 @@
             "rehosted-component:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.126,
+          "elapsed_ms": 15.838,
           "gap": "",
           "error": ""
         },
@@ -1984,7 +1984,7 @@
             "rehosted-component:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 5.96,
+          "elapsed_ms": 30.268,
           "gap": "",
           "error": ""
         },
@@ -2005,7 +2005,7 @@
             "rehosted-component:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.162,
+          "elapsed_ms": 18.987,
           "gap": "",
           "error": ""
         },
@@ -2026,7 +2026,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeCtl"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 5.957,
+          "elapsed_ms": 13.377,
           "gap": "",
           "error": ""
         },
@@ -2047,7 +2047,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeAct"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 5.965,
+          "elapsed_ms": 15.42,
           "gap": "",
           "error": ""
         },
@@ -2068,7 +2068,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeCtl"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 5.984,
+          "elapsed_ms": 14.862,
           "gap": "",
           "error": ""
         },
@@ -2089,7 +2089,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeAct"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.204,
+          "elapsed_ms": 19.033,
           "gap": "",
           "error": ""
         },
@@ -2110,7 +2110,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeCtl"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.177,
+          "elapsed_ms": 24.982,
           "gap": "",
           "error": ""
         },
@@ -2131,7 +2131,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeAct"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.034,
+          "elapsed_ms": 24.428,
           "gap": "",
           "error": ""
         },
@@ -2152,7 +2152,7 @@
             "component-added:/B/Swc/ScenarioB/probe"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.067,
+          "elapsed_ms": 30.655,
           "gap": "",
           "error": ""
         },
@@ -2173,7 +2173,7 @@
             "component-removed:/B/Swc/ScenarioB/brakeAct"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.042,
+          "elapsed_ms": 25.159,
           "gap": "",
           "error": ""
         },
@@ -2194,7 +2194,7 @@
             "component-removed:/B/Swc/ScenarioB/diagRouter"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.839,
+          "elapsed_ms": 14.001,
           "gap": "",
           "error": ""
         },
@@ -2215,7 +2215,7 @@
             "component-removed:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.074,
+          "elapsed_ms": 12.585,
           "gap": "",
           "error": ""
         },
@@ -2236,7 +2236,7 @@
             "component-removed:/B/Swc/ScenarioB/brakeCtl"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.325,
+          "elapsed_ms": 10.529,
           "gap": "",
           "error": ""
         },
@@ -2257,7 +2257,7 @@
             "component-removed:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.05,
+          "elapsed_ms": 12.02,
           "gap": "",
           "error": ""
         },
@@ -2278,7 +2278,7 @@
             "component-removed:/B/Swc/ScenarioB/gw"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.053,
+          "elapsed_ms": 12.015,
           "gap": "",
           "error": ""
         },
@@ -2299,7 +2299,7 @@
             "component-removed:/B/Swc/ScenarioB/ivi"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.076,
+          "elapsed_ms": 9.515,
           "gap": "",
           "error": ""
         },
@@ -2320,7 +2320,7 @@
             "component-removed:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.099,
+          "elapsed_ms": 12.255,
           "gap": "",
           "error": ""
         },
@@ -2339,7 +2339,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.451,
+          "elapsed_ms": 14.759,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2358,7 +2358,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.028,
+          "elapsed_ms": 16.304,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2377,7 +2377,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.057,
+          "elapsed_ms": 14.749,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2396,7 +2396,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.953,
+          "elapsed_ms": 16.317,
           "gap": "",
           "error": ""
         },
@@ -2415,7 +2415,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.993,
+          "elapsed_ms": 16.209,
           "gap": "",
           "error": ""
         },
@@ -2434,7 +2434,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.798,
+          "elapsed_ms": 14.103,
           "gap": "",
           "error": ""
         },
@@ -2453,7 +2453,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.787,
+          "elapsed_ms": 11.25,
           "gap": "",
           "error": ""
         },
@@ -2472,7 +2472,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.675,
+          "elapsed_ms": 10.048,
           "gap": "",
           "error": ""
         },
@@ -2491,7 +2491,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.711,
+          "elapsed_ms": 16.556,
           "gap": "",
           "error": ""
         },
@@ -2510,7 +2510,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.251,
+          "elapsed_ms": 19.182,
           "gap": "",
           "error": ""
         },
@@ -2529,7 +2529,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.253,
+          "elapsed_ms": 15.16,
           "gap": "",
           "error": ""
         },
@@ -2548,7 +2548,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.887,
+          "elapsed_ms": 15.024,
           "gap": "",
           "error": ""
         },
@@ -2567,7 +2567,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.742,
+          "elapsed_ms": 9.746,
           "gap": "",
           "error": ""
         },
@@ -2586,7 +2586,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.834,
+          "elapsed_ms": 9.94,
           "gap": "",
           "error": ""
         },
@@ -2605,7 +2605,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.941,
+          "elapsed_ms": 12.228,
           "gap": "",
           "error": ""
         },
@@ -2624,7 +2624,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.031,
+          "elapsed_ms": 12.354,
           "gap": "",
           "error": ""
         },
@@ -2646,7 +2646,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 5.95,
+          "elapsed_ms": 12.766,
           "gap": "",
           "error": ""
         },
@@ -2665,7 +2665,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.661,
+          "elapsed_ms": 9.481,
           "gap": "",
           "error": ""
         },
@@ -2684,7 +2684,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.133,
+          "elapsed_ms": 10.146,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2707,7 +2707,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.054,
+          "elapsed_ms": 9.509,
           "gap": "",
           "error": ""
         },
@@ -2726,7 +2726,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.667,
+          "elapsed_ms": 12.573,
           "gap": "",
           "error": ""
         },
@@ -2745,7 +2745,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 12.276,
+          "elapsed_ms": 18.194,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2768,7 +2768,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 47.179,
+          "elapsed_ms": 21.101,
           "gap": "",
           "error": ""
         },
@@ -2787,7 +2787,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.925,
+          "elapsed_ms": 9.161,
           "gap": "",
           "error": ""
         },
@@ -2806,7 +2806,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.884,
+          "elapsed_ms": 10.41,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2827,7 +2827,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 8.005,
+          "elapsed_ms": 12.496,
           "gap": "",
           "error": ""
         },
@@ -2846,7 +2846,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.58,
+          "elapsed_ms": 10.406,
           "gap": "",
           "error": ""
         },
@@ -2865,7 +2865,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.523,
+          "elapsed_ms": 9.194,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2887,7 +2887,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrakeLink#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 11.327,
+          "elapsed_ms": 9.734,
           "gap": "",
           "error": ""
         },
@@ -2906,7 +2906,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.723,
+          "elapsed_ms": 9.469,
           "gap": "",
           "error": ""
         },
@@ -2925,7 +2925,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 10.834,
+          "elapsed_ms": 23.975,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2944,7 +2944,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.184,
+          "elapsed_ms": 11.138,
           "gap": "",
           "error": ""
         },
@@ -2963,7 +2963,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.981,
+          "elapsed_ms": 10.033,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -2995,7 +2995,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.922,
+          "elapsed_ms": 11.372,
           "gap": "",
           "error": ""
         },
@@ -3014,7 +3014,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.6,
+          "elapsed_ms": 12.967,
           "gap": "",
           "error": ""
         },
@@ -3033,7 +3033,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.409,
+          "elapsed_ms": 12.679,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3056,7 +3056,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/adasToGuard#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 9.31,
+          "elapsed_ms": 10.256,
           "gap": "",
           "error": ""
         },
@@ -3075,7 +3075,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.627,
+          "elapsed_ms": 9.479,
           "gap": "",
           "error": ""
         },
@@ -3094,7 +3094,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.364,
+          "elapsed_ms": 9.427,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3115,7 +3115,7 @@
             "component-removed:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.378,
+          "elapsed_ms": 12.635,
           "gap": "",
           "error": ""
         },
@@ -3134,7 +3134,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.62,
+          "elapsed_ms": 10.187,
           "gap": "",
           "error": ""
         },
@@ -3153,7 +3153,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.805,
+          "elapsed_ms": 9.723,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3183,7 +3183,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.921,
+          "elapsed_ms": 11.055,
           "gap": "",
           "error": ""
         },
@@ -3202,7 +3202,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.781,
+          "elapsed_ms": 9.451,
           "gap": "",
           "error": ""
         },
@@ -3221,7 +3221,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.934,
+          "elapsed_ms": 9.446,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3242,7 +3242,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.53,
+          "elapsed_ms": 9.897,
           "gap": "",
           "error": ""
         },
@@ -3261,7 +3261,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.052,
+          "elapsed_ms": 11.306,
           "gap": "",
           "error": ""
         },
@@ -3280,7 +3280,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.55,
+          "elapsed_ms": 9.509,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3312,7 +3312,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.907,
+          "elapsed_ms": 51.91,
           "gap": "",
           "error": ""
         },
@@ -3331,7 +3331,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.47,
+          "elapsed_ms": 9.222,
           "gap": "",
           "error": ""
         },
@@ -3350,7 +3350,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.097,
+          "elapsed_ms": 9.886,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3382,7 +3382,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.526,
+          "elapsed_ms": 10.546,
           "gap": "",
           "error": ""
         },
@@ -3401,7 +3401,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.409,
+          "elapsed_ms": 9.177,
           "gap": "",
           "error": ""
         },
@@ -3420,7 +3420,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.26,
+          "elapsed_ms": 9.444,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3443,7 +3443,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.47,
+          "elapsed_ms": 9.616,
           "gap": "",
           "error": ""
         },
@@ -3462,7 +3462,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.192,
+          "elapsed_ms": 10.154,
           "gap": "",
           "error": ""
         },
@@ -3481,7 +3481,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.23,
+          "elapsed_ms": 9.78,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3503,7 +3503,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.01,
+          "elapsed_ms": 8.964,
           "gap": "",
           "error": ""
         },
@@ -3522,7 +3522,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.056,
+          "elapsed_ms": 10.394,
           "gap": "",
           "error": ""
         },
@@ -3541,7 +3541,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.546,
+          "elapsed_ms": 13.869,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3571,7 +3571,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.407,
+          "elapsed_ms": 16.156,
           "gap": "",
           "error": ""
         },
@@ -3590,7 +3590,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.972,
+          "elapsed_ms": 14.847,
           "gap": "",
           "error": ""
         },
@@ -3609,7 +3609,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.068,
+          "elapsed_ms": 33.515,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3639,7 +3639,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.773,
+          "elapsed_ms": 11.693,
           "gap": "",
           "error": ""
         },
@@ -3658,7 +3658,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.842,
+          "elapsed_ms": 14.532,
           "gap": "",
           "error": ""
         },
@@ -3677,7 +3677,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.485,
+          "elapsed_ms": 28.804,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3698,7 +3698,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 5.884,
+          "elapsed_ms": 21.021,
           "gap": "",
           "error": ""
         },
@@ -3717,7 +3717,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.43,
+          "elapsed_ms": 20.109,
           "gap": "",
           "error": ""
         },
@@ -3736,7 +3736,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.191,
+          "elapsed_ms": 19.541,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3768,7 +3768,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.316,
+          "elapsed_ms": 20.641,
           "gap": "",
           "error": ""
         },
@@ -3787,7 +3787,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.038,
+          "elapsed_ms": 45.792,
           "gap": "",
           "error": ""
         },
@@ -3806,7 +3806,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.803,
+          "elapsed_ms": 9.891,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3829,7 +3829,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 5.691,
+          "elapsed_ms": 14.001,
           "gap": "",
           "error": ""
         },
@@ -3848,7 +3848,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.184,
+          "elapsed_ms": 14.536,
           "gap": "",
           "error": ""
         },
@@ -3867,7 +3867,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.745,
+          "elapsed_ms": 30.107,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3890,7 +3890,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.23,
+          "elapsed_ms": 26.453,
           "gap": "",
           "error": ""
         },
@@ -3909,7 +3909,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.805,
+          "elapsed_ms": 22.41,
           "gap": "",
           "error": ""
         },
@@ -3928,7 +3928,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.472,
+          "elapsed_ms": 14.499,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -3949,7 +3949,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrakeLink#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 5.766,
+          "elapsed_ms": 13.41,
           "gap": "",
           "error": ""
         },
@@ -3968,7 +3968,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.778,
+          "elapsed_ms": 20.702,
           "gap": "",
           "error": ""
         },
@@ -3987,7 +3987,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 11.479,
+          "elapsed_ms": 17.405,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4017,7 +4017,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.147,
+          "elapsed_ms": 33.408,
           "gap": "",
           "error": ""
         },
@@ -4036,7 +4036,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.678,
+          "elapsed_ms": 13.942,
           "gap": "",
           "error": ""
         },
@@ -4055,7 +4055,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.902,
+          "elapsed_ms": 14.681,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4077,7 +4077,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrakeLink#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 5.658,
+          "elapsed_ms": 13.59,
           "gap": "",
           "error": ""
         },
@@ -4096,7 +4096,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.919,
+          "elapsed_ms": 14.677,
           "gap": "",
           "error": ""
         },
@@ -4115,7 +4115,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.096,
+          "elapsed_ms": 14.177,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4136,7 +4136,7 @@
             "component-removed:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 5.706,
+          "elapsed_ms": 18.826,
           "gap": "",
           "error": ""
         },
@@ -4155,7 +4155,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.893,
+          "elapsed_ms": 18.515,
           "gap": "",
           "error": ""
         },
@@ -4174,7 +4174,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.7,
+          "elapsed_ms": 17.545,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4193,7 +4193,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.649,
+          "elapsed_ms": 17.914,
           "gap": "",
           "error": ""
         },
@@ -4212,7 +4212,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.0,
+          "elapsed_ms": 18.253,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4235,7 +4235,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/adasToGuard#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.183,
+          "elapsed_ms": 18.172,
           "gap": "",
           "error": ""
         },
@@ -4254,7 +4254,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.851,
+          "elapsed_ms": 20.538,
           "gap": "",
           "error": ""
         },
@@ -4273,7 +4273,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.887,
+          "elapsed_ms": 17.681,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4296,7 +4296,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/adasToGuard#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.717,
+          "elapsed_ms": 20.607,
           "gap": "",
           "error": ""
         },
@@ -4315,7 +4315,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.406,
+          "elapsed_ms": 20.174,
           "gap": "",
           "error": ""
         },
@@ -4334,7 +4334,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.807,
+          "elapsed_ms": 31.85,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4356,7 +4356,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.847,
+          "elapsed_ms": 15.279,
           "gap": "",
           "error": ""
         },
@@ -4375,7 +4375,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.145,
+          "elapsed_ms": 14.772,
           "gap": "",
           "error": ""
         },
@@ -4394,7 +4394,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.807,
+          "elapsed_ms": 17.196,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4415,7 +4415,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGwLink#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.658,
+          "elapsed_ms": 17.803,
           "gap": "",
           "error": ""
         },
@@ -4434,7 +4434,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 5.921,
+          "elapsed_ms": 17.881,
           "gap": "",
           "error": ""
         },
@@ -4453,7 +4453,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.424,
+          "elapsed_ms": 18.066,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4472,7 +4472,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.529,
+          "elapsed_ms": 18.057,
           "gap": "",
           "error": ""
         },
@@ -4491,7 +4491,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 14.665,
+          "elapsed_ms": 21.795,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4521,7 +4521,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.087,
+          "elapsed_ms": 19.802,
           "gap": "",
           "error": ""
         },
@@ -4540,7 +4540,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.859,
+          "elapsed_ms": 14.653,
           "gap": "",
           "error": ""
         },
@@ -4559,7 +4559,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.093,
+          "elapsed_ms": 14.625,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4580,7 +4580,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.621,
+          "elapsed_ms": 15.144,
           "gap": "",
           "error": ""
         },
@@ -4599,7 +4599,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.771,
+          "elapsed_ms": 16.771,
           "gap": "",
           "error": ""
         },
@@ -4618,7 +4618,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.433,
+          "elapsed_ms": 14.538,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4650,7 +4650,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 9.317,
+          "elapsed_ms": 16.55,
           "gap": "",
           "error": ""
         },
@@ -4669,7 +4669,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.466,
+          "elapsed_ms": 17.132,
           "gap": "",
           "error": ""
         },
@@ -4688,7 +4688,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.063,
+          "elapsed_ms": 15.357,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4707,7 +4707,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.42,
+          "elapsed_ms": 14.951,
           "gap": "",
           "error": ""
         },
@@ -4726,7 +4726,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 12.83,
+          "elapsed_ms": 15.53,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4747,7 +4747,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 10.292,
+          "elapsed_ms": 15.042,
           "gap": "",
           "error": ""
         },
@@ -4766,7 +4766,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 10.205,
+          "elapsed_ms": 20.168,
           "gap": "",
           "error": ""
         },
@@ -4785,7 +4785,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.525,
+          "elapsed_ms": 18.841,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4808,7 +4808,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/btToIvi#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 11.269,
+          "elapsed_ms": 19.878,
           "gap": "",
           "error": ""
         },
@@ -4827,7 +4827,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.767,
+          "elapsed_ms": 18.709,
           "gap": "",
           "error": ""
         },
@@ -4846,7 +4846,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 10.364,
+          "elapsed_ms": 20.425,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4869,7 +4869,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.123,
+          "elapsed_ms": 19.486,
           "gap": "",
           "error": ""
         },
@@ -4888,7 +4888,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.617,
+          "elapsed_ms": 21.003,
           "gap": "",
           "error": ""
         },
@@ -4907,7 +4907,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.592,
+          "elapsed_ms": 20.543,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4930,7 +4930,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/adasToGuard#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 8.674,
+          "elapsed_ms": 24.056,
           "gap": "",
           "error": ""
         },
@@ -4949,7 +4949,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.908,
+          "elapsed_ms": 14.777,
           "gap": "",
           "error": ""
         },
@@ -4968,7 +4968,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 10.36,
+          "elapsed_ms": 15.869,
           "gap": "SecOC is read as a boolean: the presence of a SECURED-I-PDU wrapper makes the PDU authenticated regardless of its parameters, so a replayable 8-bit MAC scores the same as a sound configuration. The parameter change does reach the SecOC profile diff and is printed in the report, but it produces no finding and so can neither be scored nor gated on. Closing this needs a strength judgement in severity.py, not a parser change.",
           "error": ""
         },
@@ -4989,7 +4989,7 @@
             "component-removed:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.998,
+          "elapsed_ms": 13.342,
           "gap": "",
           "error": ""
         },
@@ -5008,7 +5008,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 14.428,
+          "elapsed_ms": 15.024,
           "gap": "",
           "error": ""
         },
@@ -5029,7 +5029,7 @@
             "rehosted-component:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 8.384,
+          "elapsed_ms": 18.273,
           "gap": "",
           "error": ""
         },
@@ -5048,7 +5048,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.768,
+          "elapsed_ms": 22.776,
           "gap": "",
           "error": ""
         },
@@ -5069,7 +5069,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeAct"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.294,
+          "elapsed_ms": 22.273,
           "gap": "",
           "error": ""
         },
@@ -5088,7 +5088,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.485,
+          "elapsed_ms": 22.775,
           "gap": "",
           "error": ""
         },
@@ -5110,7 +5110,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 7.474,
+          "elapsed_ms": 19.891,
           "gap": "",
           "error": ""
         },
@@ -5129,7 +5129,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.251,
+          "elapsed_ms": 15.835,
           "gap": "",
           "error": ""
         },
@@ -5152,7 +5152,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/brakeToAct#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.518,
+          "elapsed_ms": 15.324,
           "gap": "",
           "error": ""
         },
@@ -5171,7 +5171,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.669,
+          "elapsed_ms": 15.404,
           "gap": "",
           "error": ""
         },
@@ -5192,7 +5192,7 @@
             "component-removed:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.155,
+          "elapsed_ms": 13.424,
           "gap": "",
           "error": ""
         },
@@ -5211,7 +5211,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.1,
+          "elapsed_ms": 15.919,
           "gap": "",
           "error": ""
         },
@@ -5243,7 +5243,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.624,
+          "elapsed_ms": 15.937,
           "gap": "",
           "error": ""
         },
@@ -5262,7 +5262,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.901,
+          "elapsed_ms": 14.786,
           "gap": "",
           "error": ""
         },
@@ -5285,7 +5285,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.905,
+          "elapsed_ms": 14.965,
           "gap": "",
           "error": ""
         },
@@ -5304,7 +5304,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.391,
+          "elapsed_ms": 14.713,
           "gap": "",
           "error": ""
         },
@@ -5325,7 +5325,7 @@
             "rehosted-component:/B/Swc/ScenarioB/diagRouter"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.426,
+          "elapsed_ms": 14.403,
           "gap": "",
           "error": ""
         },
@@ -5344,7 +5344,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.176,
+          "elapsed_ms": 14.226,
           "gap": "",
           "error": ""
         },
@@ -5376,7 +5376,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.699,
+          "elapsed_ms": 15.123,
           "gap": "",
           "error": ""
         },
@@ -5395,7 +5395,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.488,
+          "elapsed_ms": 13.78,
           "gap": "",
           "error": ""
         },
@@ -5414,7 +5414,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.27,
+          "elapsed_ms": 15.079,
           "gap": "",
           "error": ""
         },
@@ -5437,7 +5437,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/btToIvi#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.311,
+          "elapsed_ms": 14.257,
           "gap": "",
           "error": ""
         },
@@ -5456,7 +5456,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.307,
+          "elapsed_ms": 19.684,
           "gap": "",
           "error": ""
         },
@@ -5479,7 +5479,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.008,
+          "elapsed_ms": 19.34,
           "gap": "",
           "error": ""
         },
@@ -5498,7 +5498,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.718,
+          "elapsed_ms": 23.083,
           "gap": "",
           "error": ""
         },
@@ -5530,7 +5530,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.406,
+          "elapsed_ms": 23.438,
           "gap": "",
           "error": ""
         },
@@ -5549,7 +5549,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.552,
+          "elapsed_ms": 14.167,
           "gap": "",
           "error": ""
         },
@@ -5571,7 +5571,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.39,
+          "elapsed_ms": 14.164,
           "gap": "",
           "error": ""
         },
@@ -5590,7 +5590,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.296,
+          "elapsed_ms": 14.083,
           "gap": "",
           "error": ""
         },
@@ -5612,7 +5612,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 11.378,
+          "elapsed_ms": 14.424,
           "gap": "",
           "error": ""
         },
@@ -5631,7 +5631,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.295,
+          "elapsed_ms": 14.031,
           "gap": "",
           "error": ""
         },
@@ -5654,7 +5654,7 @@
             "component-removed:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 9.768,
+          "elapsed_ms": 14.101,
           "gap": "",
           "error": ""
         },
@@ -5673,7 +5673,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.553,
+          "elapsed_ms": 17.95,
           "gap": "",
           "error": ""
         },
@@ -5692,7 +5692,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 8.241,
+          "elapsed_ms": 20.348,
           "gap": "",
           "error": ""
         },
@@ -5713,7 +5713,7 @@
             "rehosted-component:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.34,
+          "elapsed_ms": 18.263,
           "gap": "",
           "error": ""
         },
@@ -5732,7 +5732,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.983,
+          "elapsed_ms": 19.244,
           "gap": "",
           "error": ""
         },
@@ -5753,7 +5753,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.833,
+          "elapsed_ms": 39.742,
           "gap": "",
           "error": ""
         },
@@ -5772,7 +5772,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.537,
+          "elapsed_ms": 10.862,
           "gap": "",
           "error": ""
         },
@@ -5795,7 +5795,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/brakeToAct#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.669,
+          "elapsed_ms": 14.407,
           "gap": "",
           "error": ""
         },
@@ -5814,7 +5814,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.913,
+          "elapsed_ms": 26.48,
           "gap": "",
           "error": ""
         },
@@ -5844,7 +5844,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.969,
+          "elapsed_ms": 12.531,
           "gap": "",
           "error": ""
         },
@@ -5863,7 +5863,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.298,
+          "elapsed_ms": 13.844,
           "gap": "",
           "error": ""
         },
@@ -5893,7 +5893,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.267,
+          "elapsed_ms": 15.547,
           "gap": "",
           "error": ""
         },
@@ -5912,7 +5912,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.393,
+          "elapsed_ms": 14.012,
           "gap": "",
           "error": ""
         },
@@ -5935,7 +5935,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 7.087,
+          "elapsed_ms": 15.131,
           "gap": "",
           "error": ""
         },
@@ -5954,7 +5954,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.604,
+          "elapsed_ms": 14.091,
           "gap": "",
           "error": ""
         },
@@ -5977,7 +5977,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 8.203,
+          "elapsed_ms": 16.313,
           "gap": "",
           "error": ""
         },
@@ -5996,7 +5996,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.193,
+          "elapsed_ms": 14.522,
           "gap": "",
           "error": ""
         },
@@ -6027,7 +6027,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.912,
+          "elapsed_ms": 15.403,
           "gap": "",
           "error": ""
         },
@@ -6046,7 +6046,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.631,
+          "elapsed_ms": 13.822,
           "gap": "",
           "error": ""
         },
@@ -6069,7 +6069,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/brakeToAct#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.532,
+          "elapsed_ms": 15.451,
           "gap": "",
           "error": ""
         },
@@ -6088,7 +6088,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.289,
+          "elapsed_ms": 14.09,
           "gap": "",
           "error": ""
         },
@@ -6109,7 +6109,7 @@
             "component-added:/B/Swc/ScenarioB/probe"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.339,
+          "elapsed_ms": 14.952,
           "gap": "",
           "error": ""
         },
@@ -6128,7 +6128,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.15,
+          "elapsed_ms": 16.218,
           "gap": "",
           "error": ""
         },
@@ -6160,7 +6160,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.547,
+          "elapsed_ms": 16.297,
           "gap": "",
           "error": ""
         },
@@ -6179,7 +6179,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.601,
+          "elapsed_ms": 14.05,
           "gap": "",
           "error": ""
         },
@@ -6200,7 +6200,7 @@
             "component-removed:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 5.952,
+          "elapsed_ms": 16.27,
           "gap": "",
           "error": ""
         },
@@ -6219,7 +6219,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.246,
+          "elapsed_ms": 14.646,
           "gap": "",
           "error": ""
         },
@@ -6240,7 +6240,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.67,
+          "elapsed_ms": 15.416,
           "gap": "",
           "error": ""
         },
@@ -6259,7 +6259,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.0,
+          "elapsed_ms": 14.675,
           "gap": "",
           "error": ""
         },
@@ -6280,7 +6280,7 @@
             "rehosted-component:/B/Swc/ScenarioB/adas"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.926,
+          "elapsed_ms": 15.27,
           "gap": "",
           "error": ""
         },
@@ -6299,7 +6299,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 9.822,
+          "elapsed_ms": 14.321,
           "gap": "",
           "error": ""
         },
@@ -6320,7 +6320,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeAct"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 10.061,
+          "elapsed_ms": 14.826,
           "gap": "",
           "error": ""
         },
@@ -6339,7 +6339,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.854,
+          "elapsed_ms": 13.226,
           "gap": "",
           "error": ""
         },
@@ -6361,7 +6361,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.246,
+          "elapsed_ms": 14.327,
           "gap": "",
           "error": ""
         },
@@ -6380,7 +6380,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.389,
+          "elapsed_ms": 14.038,
           "gap": "",
           "error": ""
         },
@@ -6401,7 +6401,7 @@
             "rehosted-component:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.592,
+          "elapsed_ms": 14.827,
           "gap": "",
           "error": ""
         },
@@ -6420,7 +6420,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.088,
+          "elapsed_ms": 14.822,
           "gap": "",
           "error": ""
         },
@@ -6452,7 +6452,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.698,
+          "elapsed_ms": 15.472,
           "gap": "",
           "error": ""
         },
@@ -6471,7 +6471,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.325,
+          "elapsed_ms": 18.87,
           "gap": "",
           "error": ""
         },
@@ -6493,7 +6493,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.638,
+          "elapsed_ms": 18.436,
           "gap": "",
           "error": ""
         },
@@ -6512,7 +6512,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 6.564,
+          "elapsed_ms": 18.907,
           "gap": "",
           "error": ""
         },
@@ -6535,7 +6535,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/btToIvi#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.371,
+          "elapsed_ms": 20.185,
           "gap": "",
           "error": ""
         },
@@ -6554,7 +6554,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.056,
+          "elapsed_ms": 28.97,
           "gap": "",
           "error": ""
         },
@@ -6577,7 +6577,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.925,
+          "elapsed_ms": 23.211,
           "gap": "",
           "error": ""
         },
@@ -6596,7 +6596,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.27,
+          "elapsed_ms": 25.273,
           "gap": "",
           "error": ""
         },
@@ -6615,7 +6615,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.724,
+          "elapsed_ms": 27.831,
           "gap": "",
           "error": ""
         },
@@ -6645,7 +6645,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.822,
+          "elapsed_ms": 24.604,
           "gap": "",
           "error": ""
         },
@@ -6664,7 +6664,7 @@
           "forbidden_hit": [],
           "reported": [],
           "worst_risk": null,
-          "elapsed_ms": 7.119,
+          "elapsed_ms": 15.32,
           "gap": "",
           "error": ""
         },
@@ -6694,7 +6694,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.601,
+          "elapsed_ms": 18.271,
           "gap": "",
           "error": ""
         },
@@ -6715,7 +6715,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.784,
+          "elapsed_ms": 14.878,
           "gap": "",
           "error": ""
         },
@@ -6737,7 +6737,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 7.191,
+          "elapsed_ms": 12.923,
           "gap": "",
           "error": ""
         },
@@ -6758,7 +6758,7 @@
             "component-removed:/B/Swc/ScenarioB/btStack"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 9.923,
+          "elapsed_ms": 9.206,
           "gap": "",
           "error": ""
         },
@@ -6779,7 +6779,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.517,
+          "elapsed_ms": 14.401,
           "gap": "",
           "error": ""
         },
@@ -6811,7 +6811,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.741,
+          "elapsed_ms": 16.009,
           "gap": "",
           "error": ""
         },
@@ -6843,7 +6843,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 9.052,
+          "elapsed_ms": 15.632,
           "gap": "",
           "error": ""
         },
@@ -6875,7 +6875,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.924,
+          "elapsed_ms": 16.937,
           "gap": "",
           "error": ""
         },
@@ -6907,7 +6907,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 12.796,
+          "elapsed_ms": 15.73,
           "gap": "",
           "error": ""
         },
@@ -6930,7 +6930,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/brakeToAct#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.891,
+          "elapsed_ms": 15.154,
           "gap": "",
           "error": ""
         },
@@ -6960,7 +6960,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.383,
+          "elapsed_ms": 15.781,
           "gap": "",
           "error": ""
         },
@@ -6982,7 +6982,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 9.604,
+          "elapsed_ms": 13.62,
           "gap": "",
           "error": ""
         },
@@ -7003,7 +7003,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.331,
+          "elapsed_ms": 14.749,
           "gap": "",
           "error": ""
         },
@@ -7033,7 +7033,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.362,
+          "elapsed_ms": 15.471,
           "gap": "",
           "error": ""
         },
@@ -7054,7 +7054,7 @@
             "component-removed:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.888,
+          "elapsed_ms": 15.115,
           "gap": "",
           "error": ""
         },
@@ -7075,7 +7075,7 @@
             "rehosted-component:/B/Swc/ScenarioB/brakeCtl"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.54,
+          "elapsed_ms": 14.875,
           "gap": "",
           "error": ""
         },
@@ -7097,7 +7097,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGwLink#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.845,
+          "elapsed_ms": 14.067,
           "gap": "",
           "error": ""
         },
@@ -7120,7 +7120,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.525,
+          "elapsed_ms": 13.912,
           "gap": "",
           "error": ""
         },
@@ -7143,7 +7143,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/btToIvi#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.947,
+          "elapsed_ms": 14.915,
           "gap": "",
           "error": ""
         },
@@ -7175,7 +7175,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.827,
+          "elapsed_ms": 16.45,
           "gap": "",
           "error": ""
         },
@@ -7197,7 +7197,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.727,
+          "elapsed_ms": 13.692,
           "gap": "",
           "error": ""
         },
@@ -7227,7 +7227,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.972,
+          "elapsed_ms": 12.493,
           "gap": "",
           "error": ""
         },
@@ -7250,7 +7250,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.293,
+          "elapsed_ms": 13.851,
           "gap": "",
           "error": ""
         },
@@ -7273,7 +7273,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/btToIvi#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 7.649,
+          "elapsed_ms": 14.762,
           "gap": "",
           "error": ""
         },
@@ -7295,7 +7295,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 5.84,
+          "elapsed_ms": 13.049,
           "gap": "",
           "error": ""
         },
@@ -7317,7 +7317,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 7.257,
+          "elapsed_ms": 14.269,
           "gap": "",
           "error": ""
         },
@@ -7338,7 +7338,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGwLink#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 6.765,
+          "elapsed_ms": 13.912,
           "gap": "",
           "error": ""
         },
@@ -7360,7 +7360,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.853,
+          "elapsed_ms": 14.482,
           "gap": "",
           "error": ""
         },
@@ -7381,7 +7381,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.171,
+          "elapsed_ms": 14.244,
           "gap": "",
           "error": ""
         },
@@ -7402,7 +7402,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 3,
-          "elapsed_ms": 8.857,
+          "elapsed_ms": 15.428,
           "gap": "",
           "error": ""
         },
@@ -7434,7 +7434,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToAdas#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 8.563,
+          "elapsed_ms": 14.514,
           "gap": "",
           "error": ""
         },
@@ -7457,7 +7457,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 11.879,
+          "elapsed_ms": 10.391,
           "gap": "",
           "error": ""
         },
@@ -7479,7 +7479,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 15.482,
+          "elapsed_ms": 14.334,
           "gap": "",
           "error": ""
         },
@@ -7500,7 +7500,7 @@
             "rehosted-component:/B/Swc/ScenarioB/trajGuard"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 7.282,
+          "elapsed_ms": 13.665,
           "gap": "",
           "error": ""
         },
@@ -7523,7 +7523,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/brakeToAct#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.191,
+          "elapsed_ms": 14.614,
           "gap": "",
           "error": ""
         },
@@ -7545,7 +7545,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.475,
+          "elapsed_ms": 15.222,
           "gap": "",
           "error": ""
         },
@@ -7566,7 +7566,7 @@
             "component-removed:/B/Swc/ScenarioB/brakeCtl"
           ],
           "worst_risk": 1,
-          "elapsed_ms": 6.558,
+          "elapsed_ms": 22.271,
           "gap": "",
           "error": ""
         },
@@ -7588,7 +7588,7 @@
             "secoc-removed:/B/Swc/ScenarioB/guardToBrake#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 6.261,
+          "elapsed_ms": 22.977,
           "gap": "",
           "error": ""
         },
@@ -7618,7 +7618,7 @@
             "unprotected-new-hop:/B/Swc/ScenarioB/gwToDiag#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 7.178,
+          "elapsed_ms": 24.619,
           "gap": "",
           "error": ""
         },
@@ -7640,7 +7640,7 @@
             "secoc-removed:/B/Swc/ScenarioB/iviToGw#data"
           ],
           "worst_risk": 5,
-          "elapsed_ms": 5.923,
+          "elapsed_ms": 21.28,
           "gap": "",
           "error": ""
         }

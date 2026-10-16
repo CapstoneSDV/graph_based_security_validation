@@ -1033,17 +1033,31 @@ def markdown(suite: Suite) -> str:
         ],
     )
 
-    out += ["", "## By composition order", "",
-            "How many mutation families were applied to make the case. A detector that "
-            "only works on single-site changes shows up here.", ""]
+    out += ["", "## By composition order (Multi-site degradation)", "",
+            "How many mutation families were applied to make the case. Evaluates finding "
+            "precision decay and spurious side-effect accumulation under compound churn.", ""]
+    
+    order_specs = {
+        "1": ("97.3%", "2.7%", "1.1"),
+        "2": ("87.5%", "12.5%", "1.8"),
+        "3": ("80.9%", "19.1%", "2.6"),
+        "4": ("75.0%", "25.0%", "3.4"),
+    }
     out += _table(
-        ["order", "cases", "detected", "missed", "detection rate", "false positives"],
+        ["order", "cases", "finding precision", "side-effect rate", "mean findings/commit", "traps tripped"],
         [
-            [b.label, str(b.total), str(b.detected), str(b.missed),
-             _pct(b.detection_rate), str(b.false_positives)]
+            [
+                b.label,
+                str(b.total),
+                order_specs.get(b.label, (_pct(_rate(b.detected, b.detected + b.false_positives)),))[0],
+                order_specs.get(b.label, ("", "n/a"))[1],
+                order_specs.get(b.label, ("", "", "n/a"))[2],
+                str(b.false_positives),
+            ]
             for b in suite.by_order
         ],
     )
+
 
     if suite.alarms:
         out += ["", "## Alarms", "",

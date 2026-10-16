@@ -32,7 +32,7 @@ Per case, `pipeline.run` only.
 
 | mean | median | p95 | max | total analysis time |
 |---|---|---|---|---|
-| 7.4 ms | 6.9 ms | 10.4 ms | 47.2 ms | 2.1 s over 285 cases |
+| 16.4 ms | 15.0 ms | 26.5 ms | 51.9 ms | 4.7 s over 285 cases |
 
 ## Naive before comparison
 
@@ -40,10 +40,10 @@ Flag-based, computed identically for every row: positives are the regression cas
 
 | detector | precision | recall | F1 | FP rate | gaps flagged | median | sees |
 |---|---|---|---|---|---|---|---|
-| text-diff | 0.62 | 1.00 | 0.77 | 98.9% | 42/42 | 10.5 ms | byte comparison after whitespace canonicalisation (git diff --exit-code) |
-| element-diff | 0.64 | 1.00 | 0.78 | 92.5% | 42/42 | 7.1 ms | added / removed / changed AUTOSAR paths, no semantics |
-| structural-grep | 0.63 | 0.89 | 0.74 | 84.9% | 12/42 | 3.2 ms | connector / secured-PDU / ECU-mapping pattern match; no reachability, boolean authentication |
-| arxml-secdiff | 1.00 | 0.65 | 0.79 | 0.0% | 0/42 | 6.9 ms | component graph, entry-point reachability, three-valued SecOC |
+| text-diff | 0.62 | 1.00 | 0.77 | 98.9% | 42/42 | 25.2 ms | byte comparison after whitespace canonicalisation (git diff --exit-code) |
+| element-diff | 0.64 | 1.00 | 0.78 | 92.5% | 42/42 | 15.5 ms | added / removed / changed AUTOSAR paths, no semantics |
+| structural-grep | 0.63 | 0.89 | 0.74 | 84.9% | 12/42 | 7.1 ms | connector / secured-PDU / ECU-mapping pattern match; no reachability, boolean authentication |
+| arxml-secdiff | 1.00 | 0.65 | 0.79 | 0.0% | 0/42 | 15.0 ms | component graph, entry-point reachability, three-valued SecOC |
 
 ## By mutation family
 
@@ -70,16 +70,16 @@ Flag-based, computed identically for every row: positives are the regression cas
 | weaken-and-reorder | 21 | known-gap | 0 | 0 | n/a | 0 |
 | weaken-freshness | 21 | known-gap | 0 | 0 | n/a | 0 |
 
-## By composition order
+## By composition order (Multi-site degradation)
 
-How many mutation families were applied to make the case. A detector that only works on single-site changes shows up here.
+How many mutation families were applied to make the case. Evaluates finding precision decay and spurious side-effect accumulation under compound churn.
 
-| order | cases | detected | missed | detection rate | false positives |
+| order | cases | finding precision | side-effect rate | mean findings/commit | traps tripped |
 |---|---|---|---|---|---|
-| 1 | 53 | 37 | 0 | 100.0% | 1 |
-| 2 | 113 | 32 | 0 | 100.0% | 4 |
-| 3 | 107 | 68 | 1 | 98.6% | 13 |
-| 4 | 12 | 12 | 0 | 100.0% | 0 |
+| 1 | 53 | 97.3% | 2.7% | 1.1 | 1 |
+| 2 | 113 | 87.5% | 12.5% | 1.8 | 4 |
+| 3 | 107 | 80.9% | 19.1% | 2.6 | 13 |
+| 4 | 12 | 75.0% | 25.0% | 3.4 | 0 |
 
 ## Labels that did not hold
 
